@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+video {
+  display: none;
+  width: 70%;
+  max-width: 800px;
+}
+
+.btn {
+  background: yellow;
+  color: black;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: gold;
+}
