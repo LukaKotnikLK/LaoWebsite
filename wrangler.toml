@@ -1,5 +1,0 @@
-name = "lao"
-compatibility_date = "2026-05-29"
-
-[assets]
-directory = "./public"
