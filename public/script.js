@@ -36,6 +36,6 @@ video.addEventListener("ended", () => {
     };
 
   } else {
-    window.location.href = "https://laoart.printify.me/";
+    window.location.href = "laoPage.html";
   }
 });
