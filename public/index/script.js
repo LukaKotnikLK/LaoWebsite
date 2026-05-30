@@ -35,6 +35,6 @@ video.addEventListener("ended", () => {
     };
 
   } else {
-    window.location.href = "laoPage.html";
+    window.location.href = "../laoPage/laoPage.html";
   }
 });
