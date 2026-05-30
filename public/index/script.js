@@ -39,11 +39,11 @@ video.addEventListener("ended", () => {
     ui.innerHTML = `
       <div style="display:flex; gap:15px;">
         <button class="btn" id="nextBtn">
-          <img src="images/yes.png" alt="Yes">
+          <img src="../images/yes.png" alt="Yes">
         </button>
 
         <button class="btn" onclick="alert('Other option')">
-          <img src="images/no.png" alt="No">
+          <img src="../images/no.png" alt="No">
         </button>
       </div>
     `;
