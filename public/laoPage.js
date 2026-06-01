@@ -20,5 +20,5 @@ proceedBtn.onclick = async () => {
 };
 
 agreeBtn.onclick = () => {
-  window.location.href = "../download/download.html";
+  window.location.href = "download.html";
 };
