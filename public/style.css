@@ -5,6 +5,15 @@ body {
   font-family: Arial, sans-serif;
 }
 
+#ui {
+  position: absolute;
+  bottom: 8%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   height: 100vh;
   display: flex;
@@ -16,17 +25,24 @@ body {
 }
 
 video {
-  display: none;
+  display: block;
+  width: 100%;
+}
+
+.video-wrapper {
+  position: relative;
   width: 70%;
   max-width: 800px;
+  display: none;
 }
 
 .btn2 {
-  background: yellow;
+  background: #ffd100;
   color: black;
   border: none;
   padding: 12px 20px;
-  font-size: 16px;
+  font-size: clamp(2.2rem, 4.5vw, 2.6rem);
+  font-family: 'Times New Roman', Times, serif;
   cursor: pointer;
   font-weight: bold;
   border-radius: 6px;
@@ -35,7 +51,7 @@ video {
 
 .btn2:hover {
   transform: scale(1.05);
-  background: gold;
+  background: #ffd100;
 }
 .btn {
   background: transparent;
@@ -54,12 +70,16 @@ video {
   transform: scale(1.05);
 }
 
-.btn img {
-  display: block;
-
-  width: 180px; /* adjust as needed */
-  height: auto;
-
-  user-select: none;
-  pointer-events: none;
+.no {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(2.2rem, 4.5vw, 2.6rem);
+  position: relative;
+  left: 10px;
 }
+
+.yes {
+  color: #ffd100;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(2.2rem, 4.5vw, 2.6rem);
+} 

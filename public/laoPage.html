@@ -11,45 +11,86 @@
   <div id="box" class="box">
 
     <div class="front">
-      <h2>Placeholder Title</h2>
-      <p>Some placeholder text goes here.</p>
-      <button id="proceedBtn" class="btn">Proceed</button>
-    </div>
+
+  <button id="playBtn" class="btn">
+    <img src="images/play.png" alt="Play">
+  </button>
+
+</div>
 
     <div class="inside" id="inside">
 
-      <div class="video-container">
-        <video id="video" playsinline>
-          <source src="https://pub-c6809f29c3ec42d7b05053a0441c2a37.r2.dev/final explanation before TOS.mp4" type="video/mp4">
-        </video>
-      </div>
+  <div class="video-container">
 
-      <div class="tos">
-        <h3>Terms of Service</h3>
-        <p>
-          This is placeholder ToS text.  
-          You agree to everything by continuing.  
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+    <img
+      id="loadingImage"
+      class="loading-image"
+      src="images/loading.png"
+      alt="Loading">
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+    <video id="video" playsinline preload="auto">
+      <source src="https://pub-c6809f29c3ec42d7b05053a0441c2a37.r2.dev/final%20explanation%20before%20TOS.mp4" type="video/mp4"> <!-- https://pub-c6809f29c3ec42d7b05053a0441c2a37.r2.dev/final%20explanation%20before%20TOS.mp4 -->
+    </video>
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+  </div>
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+  <div class="tos hidden" id="tos">
+    <h3>LAO TOS</h3>
+    <hr class="separator">
+      <div class="tos-content">
+    <p><strong>By downloading, installing, accessing, or using the LAO browser extension ("Software"), you agree to these Terms of Service.</strong></p>
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+    <p><strong>1. Artistic Project</strong><br>
+    LAO is an artistic and experimental software project intended for creative, educational, and expressive purposes. Any references to the Software as a "virus" are part of the project's artistic concept and presentation.</p>
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+    <p><strong>2. Voluntary Use</strong><br>
+    You choose to download, install, and use the Software voluntarily and at your own risk. You are solely responsible for determining whether the Software is appropriate for your device, browser, and intended use.</p>
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+    <p><strong>3. No Warranty</strong><br>
+    The Software is provided "AS IS" and "AS AVAILABLE" without warranties of any kind, whether express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, availability, security, compatibility, or non-infringement.</p>
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-        </p>
-      </div>
+    <p><strong>4. Limitation of Liability</strong><br>
+    To the maximum extent permitted by applicable law, the creator, developer, contributors, operators, and affiliates of the Software shall not be liable for any direct, indirect, incidental, consequential, special, exemplary, or punitive damages arising from or relating to the use of, inability to use, installation of, removal of, or interaction with the Software.</p>
 
-      <button id="agreeBtn" class="btn"><img src="images/agree.png" alt="Agree and Proceed"></button>
+    <p><strong>5. No Guarantee of Functionality</strong><br>
+    The Software may change, be modified, be discontinued, malfunction, or be removed at any time without notice. No guarantee is made regarding performance, uptime, availability, or continued support.</p>
 
-    </div>
+    <p><strong>6. Intellectual Property</strong><br>
+    All intellectual property rights relating to the Software, including but not limited to its code, artwork, visual assets, concepts, branding, and documentation, are owned by LAO unless explicitly stated otherwise.</p>
+
+    <p><strong>7. Indemnification</strong><br>
+    You agree to defend, indemnify, and hold harmless LAO and any contributors or affiliates from claims, damages, liabilities, costs, and expenses arising from your use of the Software or your violation of these Terms.</p>
+
+    <p><strong>8. Nature of the Software</strong><br>
+    The Software is primarily an artistic browser extension that modifies the visual appearance of webpages by replacing certain visual elements with images. The Software is not intended to damage devices, destroy data, obtain unauthorized access to systems, or perform malicious actions. Any characterization of the Software as a "virus" is artistic, symbolic, and conceptual in nature.</p>
+
+    <p><strong>9. Host Integration</strong><br>
+    Upon installation, the User acknowledges the arrival of LAO and agrees to permit the LAO symbol to occupy a space within their thoughts. The User may carry the symbol through thought, memory, dream, gesture, language, or ritual. No physical implantation is required (but is appreciated!); the occupation is conceptual, voluntary, and metaphysical.<br>
+    <em>(This clause exists solely as part of the artistic narrative of the Software and has no legal, medical, religious, or bodily effect.)</em></p>
+
+    <p><strong>10. Severability</strong><br>
+    If any provision of these Terms is found unenforceable, the remaining provisions shall remain in full force and effect.</p>
+
+    <p><strong>11. Viral Propagation (Non-Binding)</strong><br>
+    In keeping with the conceptual theme of the Software, users agree to at least consider transmitting the project's webpage link to another human being. Whether such transmission actually occurs remains entirely within the user's discretion. This clause is symbolic in nature and shall not be interpreted as creating a legal duty or obligation.</p>
+
+    <p><strong>12. Memetic Dissemination</strong><br>
+    By using the Software, the User agrees to consider participating in the continued propagation of the LAO image, symbol, or associated artwork through lawful and voluntary means&nbsp;;) Such means may include sharing digital media, displaying printed materials, creating derivative artworks, discussing the project with others, or other forms of creative expression permitted by applicable law&nbsp;;)&nbsp;;)<br>
+    Nothing in this clause shall be interpreted as requiring any action, creating any legally enforceable obligation, or encouraging trespass, vandalism, unauthorized graffiti, property damage, infringement of rights, or any unlawful conduct. The decision to share, display, reproduce, or otherwise disseminate the LAO image remains entirely at the User's discretion.</p>
+
+    <p><strong>13. Acceptance</strong><br>
+    By downloading, installing, or using the Software, you acknowledge that you have read, understood, and agreed to these Terms.</p>
+
+    <p><em>— LAO &lt;3</em></p>
+  </div>
+  </div>
+
+  <button id="agreeBtn" class="btn hidden">
+    <p>agree and continue</p>
+  </button>
+
+</div>
+    
 
   </div>
 

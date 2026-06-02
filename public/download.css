@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: yellow;
+  background: #ffd100;
   font-family: Arial, sans-serif;
 }
 
@@ -9,26 +9,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   flex-direction: column;
+  gap: 8px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
 .center-img {
   max-width: 320px;
   width: 80%;
-}
-
-/* bottom buttons */
-.buttons {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2%;
 }
 
 /* invisible button wrapper */
@@ -37,28 +31,16 @@ body {
   border: none;
   padding: 0;
   margin: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   cursor: pointer;
-}
-
-/* button image */
-.btn img {
-  display: block;
-
-  width: 12vw;
-  max-width: 180px;
-  min-width: 80px;
-
-  height: auto;
-
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(2.2rem, 4.5vw, 2.6rem);
+  text-decoration: underline dotted;
+  text-underline-offset: 4px;
+  color: black;
   transition: transform 0.2s ease;
 }
 
-.btn:hover img {
+.btn:hover {
   transform: scale(1.05);
 }
 
@@ -70,24 +52,35 @@ body {
 /* dropdown menu */
 .share-menu {
   position: absolute;
-  bottom: 50px;
-  left: 0;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 6px;
   background: black;
   display: none;
   flex-direction: column;
   border-radius: 6px;
   overflow: hidden;
+  z-index: 10;
 }
 
 .share-menu button {
   background: black;
-  color: yellow;
+  color: #ffd100;
   border: none;
   padding: 10px;
   cursor: pointer;
   text-align: left;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .share-menu button:hover {
   background: #222;
+}
+
+.signature{
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: clamp(1rem, 2vw, 1rem);
+  padding-top: 100%;
 }

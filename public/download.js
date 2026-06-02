@@ -1,8 +1,8 @@
 const shareBtn = document.getElementById("shareBtn");
 const shareMenu = document.getElementById("shareMenu");
 
-const shareText = "LAO 🟨:";
-const shareUrl = "https://laoart.printify.me/";
+const shareText = "lao? ";
+const shareUrl = "https://lao.info-slajmi.workers.dev/";
 
 let menuOpen = false;
 
@@ -15,7 +15,7 @@ shareBtn.onclick = async () => {
   if (navigator.share) {
     try {
       await navigator.share({
-        title: "LAO 🟨",
+        title: "lao?",
         text: shareText,
         url: shareUrl
       });
@@ -33,24 +33,18 @@ shareBtn.onclick = async () => {
 // handle clicks inside menu (desktop fallback)
 shareMenu.addEventListener("click", async (e) => {
   const type = e.target.dataset.type;
-
-  const message = `${shareText} ${shareUrl}`;
+  const message = `${shareText}
+${shareUrl}`;
 
   const xLink = `https://twitter.com/intent/tweet?text=${encodeURIComponent(message)}`;
   const fbLink = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`;
+  const gmailLink = `https://mail.google.com/mail/?view=cm&su=${encodeURIComponent("lao?")}&body=${encodeURIComponent(message)}`;
+  const instagramLink = `https://www.instagram.com/p/DM2eh6lt8bn/`;
 
-  if (type === "x") {
-    window.open(xLink, "_blank");
-  }
-
-  if (type === "fb") {
-    window.open(fbLink, "_blank");
-  }
-
-  if (type === "copy") {
-    await navigator.clipboard.writeText(message);
-    alert("Copied!");
-  }
+  if (type === "x") window.open(xLink, "_blank");
+  if (type === "fb") window.open(fbLink, "_blank");
+  if (type === "gmail") window.open(gmailLink, "_blank");
+  if (type === "instagram") window.open(instagramLink, "_blank");
 
   shareMenu.style.display = "none";
   menuOpen = false;

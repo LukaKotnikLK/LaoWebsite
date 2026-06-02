@@ -23,12 +23,9 @@ async function playVideo(src) {
 
 enterBtn.onclick = async () => {
   enterBtn.style.display = "none";
-
-  video.style.display = "block";
-
+  document.querySelector(".video-wrapper").style.display = "block";
   stage = 1;
   ui.innerHTML = "";
-
   await playVideo(video1);
 };
 
@@ -37,16 +34,15 @@ video.addEventListener("ended", () => {
 
   if (stage === 1) {
     ui.innerHTML = `
-      <div style="display:flex; gap:15px;">
-        <button class="btn" id="nextBtn">
-          <img src="images/yes.png" alt="Yes">
-        </button>
-
-        <button class="btn" onclick="alert('Other option')">
-          <img src="images/no.png" alt="No">
-        </button>
-      </div>
-    `;
+  <div style="display:flex; justify-content: center; gap: 300%;">
+    <button class="btn" onClick="window.location.reload();">
+      <p class="no">no</p>
+    </button>
+    <button class="btn" id="nextBtn">
+      <p class="yes">yes</p>
+    </button>
+  </div>
+`;
 
     document.getElementById("nextBtn").onclick = async () => {
       ui.innerHTML = "";
