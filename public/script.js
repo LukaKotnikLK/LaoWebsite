@@ -19,23 +19,25 @@ video.addEventListener("ended", () => {
   console.log("ended fired, stage =", stage);
   if (stage === 1) {
     ui.innerHTML = `
-  <div class="btn-row">
-    <button class="btn" onClick="window.location.reload();">
-      <p class="no">no</p>
-    </button>
-    <button class="btn" id="nextBtn">
-      <p class="yes">yes</p>
-    </button>
-  </div>
-`;
+      <div class="btn-row">
+        <button class="btn" onClick="window.location.reload();">
+          <p class="no">no</p>
+        </button>
+        <button class="btn" id="nextBtn">
+          <p class="yes">yes</p>
+        </button>
+      </div>
+    `;
     document.getElementById("nextBtn").onclick = () => {
       ui.innerHTML = "";
       stage = 2;
+      video.classList.add("fullscreen-video");
       video.src = video2;
       video.load();
       video.play().catch(err => console.error("Video play failed:", err));
     };
   } else if (stage === 2) {
+    video.classList.remove("fullscreen-video");
     window.location.href = "laoPage.html";
   }
 });
