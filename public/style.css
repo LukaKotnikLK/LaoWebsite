@@ -97,7 +97,7 @@ video {
   #ui .btn-row {
     width: 80% !important;
     max-width: none !important;
-    gap: 40% !important;
+    gap: 41% !important;
   }
   #ui .yes, #ui .no {
     font-size: 1.6rem !important;
