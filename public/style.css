@@ -103,6 +103,6 @@ video {
     font-size: 1.6rem !important;
   }
   #ui .no {
-    right: -1px !important;
+    right: -0.5px !important;
   }
 }
