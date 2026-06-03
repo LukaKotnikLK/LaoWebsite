@@ -93,6 +93,7 @@ video {
 @media (max-width: 768px) {
   #ui {
     bottom: 20%;
+    padding-top: 40px;
   }
   #ui .btn-row {
     width: 80% !important;
