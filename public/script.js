@@ -19,7 +19,7 @@ video.addEventListener("ended", () => {
   console.log("ended fired, stage =", stage);
   if (stage === 1) {
     ui.innerHTML = `
-  <div class="btn-row" style="display:flex; justify-content: center; gap: 300%;">
+  <div class="btn-row">
     <button class="btn" onClick="window.location.reload();">
       <p class="no">no</p>
     </button>
