@@ -102,7 +102,4 @@ video {
   #ui .yes, #ui .no {
     font-size: 1.4rem !important;
   }
-  #ui .no {
-    left: -1px !important;
-  }
 }
