@@ -83,3 +83,13 @@ video {
   font-family: 'Times New Roman', Times, serif;
   font-size: clamp(2.2rem, 4.5vw, 2.6rem);
 } 
+
+@media (max-width: 768px) {
+  #ui {
+    bottom: 4%;
+  }
+  #ui .btn-row {
+    width: 80% !important;
+    max-width: none !important;
+  }
+}
