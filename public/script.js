@@ -34,7 +34,7 @@ video.addEventListener("ended", () => {
 
   if (stage === 1) {
     ui.innerHTML = `
-  <div style="display:flex; justify-content: center; gap: 300%;">
+  <div class="btn-row" style="display:flex; justify-content: center; gap: 300%;">
     <button class="btn" onClick="window.location.reload();">
       <p class="no">no</p>
     </button>
