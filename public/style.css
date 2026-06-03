@@ -92,15 +92,15 @@ video {
 
 @media (max-width: 768px) {
   #ui {
-    bottom: 20%;
+    bottom: 4%;
   }
   #ui .btn-row {
     width: 80% !important;
     max-width: none !important;
-    gap:40% !important;
+    gap: 40% !important;
     margin-top: 40px;
   }
-  .yes, .no {
-    font-size: 1.4rem;
+  #ui .yes, #ui .no {
+    font-size: 1.4rem !important;
   }
 }
