@@ -98,9 +98,12 @@ video {
     width: 80% !important;
     max-width: none !important;
     gap: 40% !important;
-    margin-top: 40px;
+    margin-top: 70px;
   }
   #ui .yes, #ui .no {
     font-size: 1.4rem !important;
+  }
+  #ui.no {
+    left: 10px !important;
   }
 }
